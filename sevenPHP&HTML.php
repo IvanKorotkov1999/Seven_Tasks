@@ -21,7 +21,7 @@
     $inputText = htmlspecialchars($_POST['text']);
     $file = 'text.txt';
     
-    file_put_contents($file, $inputText, FILE_APPEND);
+    file_put_contents($file, $inputText.PHP_EOL, FILE_APPEND);
 
     } else{
         echo "Введенные данные некорректны";
